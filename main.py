@@ -5,10 +5,10 @@ from datetime import datetime
 
 def ut1():
 
-    # source of offset data in miliseconds
+    # Source of offset data in miliseconds
     data_pull_url = "https://maia.usno.navy.mil/ser7/finals2000A.daily"
 
-    # File ot save offset data download
+    # File to save offset data download
     data_file = "data.txt"
 
     # The format of the timestamp at the top of data.txt
@@ -17,6 +17,8 @@ def ut1():
     # Check if data.txt exists
     if_exists_data = os.path.isfile(data_file)
 
+    # If the data.txt file simply does not exist the create it
+    # add the time stamp at the top
     if not if_exists_data:
         urllib.request.urlretrieve(data_pull_url, data_file)
         with open(data_file, 'r+') as file:
@@ -29,9 +31,9 @@ def ut1():
     with open(data_file) as f:
         first_line = f.readline()
             
-    # If it does not exists then pull data from online source
-    # or if the first line does not equal today UTC date them
-    # pull the file form the source
+    # if the first line does not equal today UTC date then
+    # pull the file from the source
+    # add the time stamp at the top
     if datetime.utcnow().strftime(date_format) != first_line.strip():
         urllib.request.urlretrieve(data_pull_url, data_file)
         with open(data_file, 'r+') as file:
@@ -40,7 +42,7 @@ def ut1():
             file.write(
                 str(datetime.utcnow().strftime(date_format)) + "\n" + content)
 
-    # open datat.txt and file the last line of acctual data
+    # open data.txt and file the last line of acctual data
     # before predictions
     file = open(data_file, 'r')
     topology_list = file.readlines()
@@ -49,56 +51,67 @@ def ut1():
             # getting whether I(live) or P(prediction)
             ut1_live_or_predict = i[57]
             if ut1_live_or_predict == "I":
-                # getting the actual offset data if live
+                # getting the actual time offset data if live
                 ut1_offset_milli = i[58:68]
-    # converting ofset into seconds for comparison
+    # converting offset into milliseconds for comparison
     return float(ut1_offset_milli)
 
 
 def ticksout():
 
-    # hour many hours in a normal earth day
+    # how many hours in a techinal flawless normal earth day
     dayhours = 24
 
     # how many seconds in a beat
-    # divide hours in a day by 1000 since day is divided into 100 units
+    # divide hours in a technical day by 1000 since day is divided into 100 units
     # Multiply by 60 to convert hours to minutes
     # Multiply by sixty again to convert minutes to seconds
+    # multiply by 1000 to convert seocnds to milliseconds
     beatsdaymilli = (dayhours / 1000) * 60 * 60 * 1000
     
-    # Convert how many hours in a day into miliseconds
+    # Convert how many hours in a technical day into milliseconds
     dayhourmilli = dayhours * 60 * 60 * 1000
 
     incrament_data_refresh = None
 
+    # get the offet ammount in milliseconds
     ut1_offset_milli = ut1()
 
+    # split the current UTC time into hours, minuts, and seconds with milliseconds
+    # assign each to their own variable
     t = time.time()
     timestamp = datetime.utcfromtimestamp(t).isoformat()
     hours = float(timestamp[11:13])
     minutes = float(timestamp[14:16])
     seconds = float(timestamp[17:])
 
+    # get the current beat amount
+    # substract offset ammount form the amount of milliseconds the make up a technical day
     offsethourmilli = dayhourmilli + ut1_offset_milli
+    # use the new time to find what the how many seconds in a beat for the not perfect day
+    # is by comparing it to the beat if it was a technical day: 86.4
     newbeat = (offsethourmilli * beatsdaymilli) / dayhourmilli
 
-    # turns the utc hours and minutes to seconds
-    # adds the seconds from hour and the seconds fro mminutes to seconds
+    # turns the utc hours, minutes, and seconds to milliseconds
+    # adds the milliseconds from hour, the milliseconds from mminutes, and the milliseconds form seconds together
     # adds the ut1 offset into the seconds
-    timeinmilliseconds = (hours * 60 * 60 * 1000) + (minutes * 60 * 1000) + (seconds * 1000) + ut1_offset_milli        
+    timeinmilliseconds = (hours * 60 * 60 * 1000) + (minutes * 60 * 1000) + (seconds * 1000) + ut1_offset_milli
+    # divides the offset time in milliseconds by the new seconds in a beat to set what the current "time" is
     ticks = timeinmilliseconds / newbeat
 
-    # 900 is the amount of seconds in 15 minutes
     # This will tell it after how many beats to refresh the beat length
+    # use this to set in amount of UTC minutes how often you want the
+    # program to check for the latest offset milliseconds
     incrament_minutes = 15
+    # converts those minutes to milliseconds
     incrament_amount = (incrament_minutes * 60 * 1000)/newbeat
 
-    # add the utc date time stamp on the data.txt file if the program has vever run before
+    # check for the latest offset in milliseconds if program has never run before
     if incrament_data_refresh == None:
         ut1_offset_milli = ut1()
         incrament_data_refresh = (ticks + incrament_amount)
 
-    # checks every so often to determin if the time stamp needs to be updated
+    # checks every so for the latest offset in milliseconds
     if float(ticks) > incrament_data_refresh:
         ut1_offset_milli = ut1()
         incrament_data_refresh += incrament_amount
