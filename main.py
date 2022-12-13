@@ -121,6 +121,6 @@ while True:
         ticks = "00" + "{:.2f}".format(ticks)
     elif ticks < 1000:
         ticks = "0" + "{:.2f}".format(ticks)
-    print(ticks)
     deletelastline()
+    print(ticks)
     time.sleep(delaytime)
