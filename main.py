@@ -9,7 +9,7 @@ def ut1():
     data_pull_url = "https://maia.usno.navy.mil/ser7/finals2000A.daily"
 
     # File to save offset data download
-    data_file = "data.txt"
+    data_file = "data_clock.txt"
 
     # The format of the timestamp at the top of data.txt
     date_format = "%Y-%m-%d"
@@ -122,7 +122,6 @@ def ticksout():
 # deletes the last line 
 def deletelastline():
     sys.stdout.write("\033[F")
-    sys.stdout.write("\033[K")
     
 # The delay between loops of the clock
 delaytime = 0.1
@@ -134,6 +133,7 @@ while True:
         ticks = "00" + "{:.2f}".format(ticks)
     elif ticks < 1000:
         ticks = "0" + "{:.2f}".format(ticks)
+    
     deletelastline()
-    print(ticks)
+    print(str(str(ticks)))
     time.sleep(delaytime)
