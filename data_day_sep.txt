@@ -1,0 +1,953 @@
+2023-10-24
+ <!DOCTYPE HTML>
+
+ <HTML lang='en'>
+
+<HEAD>
+<TITLE>Northern Winter and Southern Summer Solstice Dates and Times - PHP Science Labs</TITLE>
+
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name="description" content="PHP Science,VSOP87,equinoxes,solstices,Math and Astronomy Programming">
+<meta name="keywords" content="PHP programming,VSOP87,equinoxes,solstices,science,math,maths,mathematics,astronomy">
+<meta name="author" content="Jay Tanner">
+<meta http-equiv='pragma'  content='no-cache'>
+<meta http-equiv='expires' content='-1'>
+<meta name='robots'    content='index,follow'>
+<meta name='googlebot' content='index,follow'>
+
+
+<style type='text/css'>
+
+body {
+      background:black; color:white: font-family:Verdana; font-size:105%;
+      line-height:145%;
+     }
+
+div {
+     background:white; color:black; font-family:Verdana; font-size:105%;
+     line-height:145%; padding:6px;
+    }
+
+pre {
+     background:white; color:black; font-family:monospace; font-size:150%;
+     font-weight:bold; text-align:left; padding:6px;
+    }
+
+code {
+      font-family:monospace; font-size:150%; font-weight:bold;
+      color:black; background:LightYellow; padding:2px;
+     }
+
+hr {background:black; height:2px; border:0px;}
+
+td {
+    background:white; color:black; font-family:Verdana; text-align:left;
+    padding:8px;
+   }
+
+img {
+     border:1px solid #808080; box-shadow:4px 4px 3px #999999;
+     border-radius:8px;
+    }
+
+input[type='text']::-ms-clear {width:0; height:0;}
+
+ input[type='text']
+{
+ color:black; background:white; font-family:monospace;
+ font-size:150%; font-weight:bold; text-align:center;
+ box-shadow:2px 2px 3px #999999; border:2px solid black;
+}
+
+ input[type='text']:focus
+{
+ color:black; background:white;
+ font-family:monospace; font-size:150%; font-weight:bold;
+ text-align:center; box-shadow:2px 2px 3px #666666; border:2px solid red;
+}
+
+ input[type='submit']
+{
+ font-weight:bold; border-radius:4px;
+ border:1px solid black;
+}
+
+ input[type='submit']:hover
+{
+ box-shadow:2px 2px 2px #444444; background:cyan;
+ font-weight:bold; border-radius:4px;
+}
+
+ textarea
+{
+ background:white; color:black; font-size:150%; font-family:monospace;
+ font-weight:bold; border-radius: 8px; border:2px solid blue; padding:6px;
+ word-wrap: break-word;
+}
+
+ A:link
+{
+ background:transparent; color:blue; font-size:90%; font-family:Verdana;
+ font-weight:bold; text-decoration:none; line-height:175%; padding:2px;
+ border:1px solid transparent;
+}
+
+A:visited {background:transparent; color:blue; font-size:90%;}
+
+ A:hover
+{
+ background:yellow; color:black; font-size:90%; border:1px solid black;
+ box-shadow:1px 1px 3px #222222;
+}
+
+A:active {background:yellow; color:black; font-size:90%;}
+
+::selection      {background:yellow; color:black;}  /* For IE9+ and Safari     */
+::-moz-selection {background:yellow; color:black;}  /* For FireFox and Mozilla */
+
+</style>
+
+
+ </HEAD>
+
+ <BODY>
+
+ <TABLE align='center'>
+ <TR><TD>
+ <PRE>
+ DATES AND TIMES (TT) NORTHERN WINTER AND SOUTHERN SUMMER BEGINS
+ AND INTERVALS BETWEEN THEM FROM 1600 TO 2400.
+
+ BASED ON THE FULL-PRECISION VSOP87 THEORY WITH THE IAU 2000B
+ NUTATION SERIES APPLIED.
+
+ ----------------------------------------------------------------
+ Extremes in range 1600 to 2400 (Gregorian):
+
+ Minimum winter/summer year interval:
+     From: 2342 Dec 22 Tue at 13:44:38
+       To: 2343 Dec 22 Wed at 19:21:06
+ Interval: 365.233657 days = 52wk  1d  05h 36m 28s
+
+ Maximum winter/summer year interval:
+     From: 1996 Dec 21 Sat at 14:06:56
+       To: 1997 Dec 21 Sun at 20:08:05
+ Interval: 365.250799 = 52wk  1d  06h 01m 09s
+
+ Difference (Max - Min) = 24m 41s
+
+
+ ==================================================================
+      DATE            TIME      INTERVAL SINCE PREVIOUS EVENT
+ YYYY MMM DD DOW       TT       DAYS
+ 1600 Dec 21 Thu at 10:49:04    365.244815 = 52wk  1d  05h 52m 32s
+ 1601 Dec 21 Fri at 16:32:48    365.238704 = 52wk  1d  05h 43m 44s
+ 1602 Dec 21 Sat at 22:19:52    365.241019 = 52wk  1d  05h 47m 04s
+ 1603 Dec 22 Mon at 04:16:03    365.247350 = 52wk  1d  05h 56m 11s
+ 1604 Dec 21 Tue at 10:07:02    365.243738 = 52wk  1d  05h 50m 59s
+ 1605 Dec 21 Wed at 16:02:48    365.247060 = 52wk  1d  05h 55m 46s
+ 1606 Dec 21 Thu at 21:57:11    365.246100 = 52wk  1d  05h 54m 23s
+ 1607 Dec 22 Sat at 03:46:07    365.242315 = 52wk  1d  05h 48m 56s
+ 1608 Dec 21 Sun at 09:41:10    365.246563 = 52wk  1d  05h 55m 03s
+ 1609 Dec 21 Mon at 15:28:30    365.241204 = 52wk  1d  05h 47m 20s
+ 1610 Dec 21 Tue at 21:15:33    365.241007 = 52wk  1d  05h 47m 03s
+ 1611 Dec 22 Thu at 03:07:29    365.244398 = 52wk  1d  05h 51m 56s
+ 1612 Dec 21 Fri at 08:51:34    365.238947 = 52wk  1d  05h 44m 05s
+ 1613 Dec 21 Sat at 14:36:38    365.239630 = 52wk  1d  05h 45m 04s
+ 1614 Dec 21 Sun at 20:24:03    365.241262 = 52wk  1d  05h 47m 25s
+ 1615 Dec 22 Tue at 02:12:34    365.242025 = 52wk  1d  05h 48m 31s
+ 1616 Dec 21 Wed at 08:06:00    365.245440 = 52wk  1d  05h 53m 26s
+ 1617 Dec 21 Thu at 13:55:38    365.242801 = 52wk  1d  05h 49m 38s
+ 1618 Dec 21 Fri at 19:42:22    365.240787 = 52wk  1d  05h 46m 44s
+ 1619 Dec 22 Sun at 01:32:32    365.243171 = 52wk  1d  05h 50m 10s
+ 1620 Dec 21 Mon at 07:20:18    365.241505 = 52wk  1d  05h 47m 46s
+ 1621 Dec 21 Tue at 13:09:05    365.242211 = 52wk  1d  05h 48m 47s
+ 1622 Dec 21 Wed at 19:00:53    365.244306 = 52wk  1d  05h 51m 48s
+ 1623 Dec 22 Fri at 00:53:51    365.245116 = 52wk  1d  05h 52m 58s
+ 1624 Dec 21 Sat at 06:44:12    365.243299 = 52wk  1d  05h 50m 21s
+ 1625 Dec 21 Sun at 12:33:50    365.242801 = 52wk  1d  05h 49m 38s
+ 1626 Dec 21 Mon at 18:22:27    365.242095 = 52wk  1d  05h 48m 37s
+ 1627 Dec 22 Wed at 00:15:55    365.245463 = 52wk  1d  05h 53m 28s
+ 1628 Dec 21 Thu at 06:09:54    365.245822 = 52wk  1d  05h 53m 59s
+ 1629 Dec 21 Fri at 11:59:15    365.242604 = 52wk  1d  05h 49m 21s
+ 1630 Dec 21 Sat at 17:48:44    365.242697 = 52wk  1d  05h 49m 29s
+ 1631 Dec 21 Sun at 23:38:04    365.242593 = 52wk  1d  05h 49m 20s
+ 1632 Dec 21 Tue at 05:24:25    365.240521 = 52wk  1d  05h 46m 21s
+ 1633 Dec 21 Wed at 11:12:13    365.241528 = 52wk  1d  05h 47m 48s
+ 1634 Dec 21 Thu at 16:58:41    365.240602 = 52wk  1d  05h 46m 28s
+ 1635 Dec 21 Fri at 22:45:34    365.240891 = 52wk  1d  05h 46m 53s
+ 1636 Dec 21 Sun at 04:33:20    365.241505 = 52wk  1d  05h 47m 46s
+ 1637 Dec 21 Mon at 10:17:12    365.238796 = 52wk  1d  05h 43m 52s
+ 1638 Dec 21 Tue at 16:05:56    365.242176 = 52wk  1d  05h 48m 44s
+ 1639 Dec 21 Wed at 22:01:10    365.246690 = 52wk  1d  05h 55m 14s
+ 1640 Dec 21 Fri at 03:54:31    365.245382 = 52wk  1d  05h 53m 21s
+ 1641 Dec 21 Sat at 09:47:42    365.245266 = 52wk  1d  05h 53m 11s
+ 1642 Dec 21 Sun at 15:39:30    365.244306 = 52wk  1d  05h 51m 48s
+ 1643 Dec 21 Mon at 21:28:26    365.242315 = 52wk  1d  05h 48m 56s
+ 1644 Dec 21 Wed at 03:21:04    365.244884 = 52wk  1d  05h 52m 38s
+ 1645 Dec 21 Thu at 09:10:19    365.242535 = 52wk  1d  05h 49m 15s
+ 1646 Dec 21 Fri at 14:58:35    365.241852 = 52wk  1d  05h 48m 16s
+ 1647 Dec 21 Sat at 20:52:44    365.245937 = 52wk  1d  05h 54m 09s
+ 1648 Dec 21 Mon at 02:38:14    365.239931 = 52wk  1d  05h 45m 30s
+ 1649 Dec 21 Tue at 08:24:23    365.240382 = 52wk  1d  05h 46m 09s
+ 1650 Dec 21 Wed at 14:14:55    365.243426 = 52wk  1d  05h 50m 32s
+ 1651 Dec 21 Thu at 20:02:15    365.241204 = 52wk  1d  05h 47m 20s
+ 1652 Dec 21 Sat at 01:55:29    365.245301 = 52wk  1d  05h 53m 14s
+ 1653 Dec 21 Sun at 07:44:17    365.242222 = 52wk  1d  05h 48m 48s
+ 1654 Dec 21 Mon at 13:27:25    365.238287 = 52wk  1d  05h 43m 08s
+ 1655 Dec 21 Tue at 19:21:11    365.245671 = 52wk  1d  05h 53m 46s
+ 1656 Dec 21 Thu at 01:06:15    365.239630 = 52wk  1d  05h 45m 04s
+ 1657 Dec 21 Fri at 06:53:45    365.241319 = 52wk  1d  05h 47m 30s
+ 1658 Dec 21 Sat at 12:47:28    365.245637 = 52wk  1d  05h 53m 43s
+ 1659 Dec 21 Sun at 18:33:10    365.240069 = 52wk  1d  05h 45m 42s
+ 1660 Dec 21 Tue at 00:24:51    365.244225 = 52wk  1d  05h 51m 41s
+ 1661 Dec 21 Wed at 06:15:01    365.243171 = 52wk  1d  05h 50m 10s
+ 1662 Dec 21 Thu at 12:01:53    365.240880 = 52wk  1d  05h 46m 52s
+ 1663 Dec 21 Fri at 18:03:01    365.250787 = 52wk  1d  06h 01m 08s
+ 1664 Dec 20 Sat at 23:55:57    365.245093 = 52wk  1d  05h 52m 56s
+ 1665 Dec 21 Mon at 05:45:19    365.242616 = 52wk  1d  05h 49m 22s
+ 1666 Dec 21 Tue at 11:39:34    365.246007 = 52wk  1d  05h 54m 15s
+ 1667 Dec 21 Wed at 17:23:11    365.238623 = 52wk  1d  05h 43m 37s
+ 1668 Dec 20 Thu at 23:12:38    365.242674 = 52wk  1d  05h 49m 27s
+ 1669 Dec 21 Sat at 05:02:17    365.242812 = 52wk  1d  05h 49m 39s
+ 1670 Dec 21 Sun at 10:43:38    365.237049 = 52wk  1d  05h 41m 21s
+ 1671 Dec 21 Mon at 16:35:46    365.244537 = 52wk  1d  05h 52m 08s
+ 1672 Dec 20 Tue at 22:20:58    365.239722 = 52wk  1d  05h 45m 12s
+ 1673 Dec 21 Thu at 04:02:08    365.236921 = 52wk  1d  05h 41m 10s
+ 1674 Dec 21 Fri at 09:56:47    365.246285 = 52wk  1d  05h 54m 39s
+ 1675 Dec 21 Sat at 15:44:47    365.241667 = 52wk  1d  05h 48m 00s
+ 1676 Dec 20 Sun at 21:37:45    365.245116 = 52wk  1d  05h 52m 58s
+ 1677 Dec 21 Tue at 03:33:15    365.246875 = 52wk  1d  05h 55m 30s
+ 1678 Dec 21 Wed at 09:15:56    365.237975 = 52wk  1d  05h 42m 41s
+ 1679 Dec 21 Thu at 15:12:53    365.247882 = 52wk  1d  05h 56m 57s
+ 1680 Dec 20 Fri at 21:05:31    365.244884 = 52wk  1d  05h 52m 38s
+ 1681 Dec 21 Sun at 02:51:01    365.239931 = 52wk  1d  05h 45m 30s
+ 1682 Dec 21 Mon at 08:49:08    365.248692 = 52wk  1d  05h 58m 07s
+ 1683 Dec 21 Tue at 14:35:28    365.240509 = 52wk  1d  05h 46m 20s
+ 1684 Dec 20 Wed at 20:22:23    365.240914 = 52wk  1d  05h 46m 55s
+ 1685 Dec 21 Fri at 02:15:53    365.245486 = 52wk  1d  05h 53m 30s
+ 1686 Dec 21 Sat at 07:56:51    365.236782 = 52wk  1d  05h 40m 58s
+ 1687 Dec 21 Sun at 13:54:48    365.248576 = 52wk  1d  05h 57m 57s
+ 1688 Dec 20 Mon at 19:47:24    365.244861 = 52wk  1d  05h 52m 36s
+ 1689 Dec 21 Wed at 01:27:39    365.236285 = 52wk  1d  05h 40m 15s
+ 1690 Dec 21 Thu at 07:21:00    365.245382 = 52wk  1d  05h 53m 21s
+ 1691 Dec 21 Fri at 13:04:45    365.238715 = 52wk  1d  05h 43m 45s
+ 1692 Dec 20 Sat at 18:49:41    365.239537 = 52wk  1d  05h 44m 56s
+ 1693 Dec 21 Mon at 00:43:57    365.246019 = 52wk  1d  05h 54m 16s
+ 1694 Dec 21 Tue at 06:24:42    365.236632 = 52wk  1d  05h 40m 45s
+ 1695 Dec 21 Wed at 12:18:12    365.245486 = 52wk  1d  05h 53m 30s
+ 1696 Dec 20 Thu at 18:11:18    365.245208 = 52wk  1d  05h 53m 06s
+ 1697 Dec 20 Fri at 23:53:14    365.237454 = 52wk  1d  05h 41m 56s
+ 1698 Dec 21 Sun at 05:53:20    365.250069 = 52wk  1d  06h 00m 06s
+ 1699 Dec 21 Mon at 11:47:57    365.246262 = 52wk  1d  05h 54m 37s
+ 1700 Dec 21 Tue at 17:38:09    365.243194 = 52wk  1d  05h 50m 12s
+ 1701 Dec 21 Wed at 23:36:04    365.248553 = 52wk  1d  05h 57m 55s
+ 1702 Dec 22 Fri at 05:18:58    365.238125 = 52wk  1d  05h 42m 54s
+ 1703 Dec 22 Sat at 11:10:06    365.243843 = 52wk  1d  05h 51m 08s
+ 1704 Dec 21 Sun at 17:04:43    365.246262 = 52wk  1d  05h 54m 37s
+ 1705 Dec 21 Mon at 22:43:40    365.235382 = 52wk  1d  05h 38m 57s
+ 1706 Dec 22 Wed at 04:36:34    365.245069 = 52wk  1d  05h 52m 54s
+ 1707 Dec 22 Thu at 10:23:45    365.241100 = 52wk  1d  05h 47m 11s
+ 1708 Dec 21 Fri at 16:02:41    365.235370 = 52wk  1d  05h 38m 56s
+ 1709 Dec 21 Sat at 21:55:47    365.245208 = 52wk  1d  05h 53m 06s
+ 1710 Dec 22 Mon at 03:38:56    365.238299 = 52wk  1d  05h 43m 09s
+ 1711 Dec 22 Tue at 09:32:06    365.245255 = 52wk  1d  05h 53m 10s
+ 1712 Dec 21 Wed at 15:30:39    365.248993 = 52wk  1d  05h 58m 33s
+ 1713 Dec 21 Thu at 21:11:25    365.236644 = 52wk  1d  05h 40m 46s
+ 1714 Dec 22 Sat at 03:05:49    365.246111 = 52wk  1d  05h 54m 24s
+ 1715 Dec 22 Sun at 08:59:04    365.245312 = 52wk  1d  05h 53m 15s
+ 1716 Dec 21 Mon at 14:43:16    365.239028 = 52wk  1d  05h 44m 12s
+ 1717 Dec 21 Tue at 20:41:46    365.248958 = 52wk  1d  05h 58m 30s
+ 1718 Dec 22 Thu at 02:27:04    365.239792 = 52wk  1d  05h 45m 18s
+ 1719 Dec 22 Fri at 08:17:17    365.243206 = 52wk  1d  05h 50m 13s
+ 1720 Dec 21 Sat at 14:13:13    365.247176 = 52wk  1d  05h 55m 56s
+ 1721 Dec 21 Sun at 19:54:09    365.236759 = 52wk  1d  05h 40m 56s
+ 1722 Dec 22 Tue at 01:49:55    365.247060 = 52wk  1d  05h 55m 46s
+ 1723 Dec 22 Wed at 07:46:28    365.247604 = 52wk  1d  05h 56m 33s
+ 1724 Dec 21 Thu at 13:29:19    365.238090 = 52wk  1d  05h 42m 51s
+ 1725 Dec 21 Fri at 19:22:06    365.244988 = 52wk  1d  05h 52m 47s
+ 1726 Dec 22 Sun at 01:04:49    365.237998 = 52wk  1d  05h 42m 43s
+ 1727 Dec 22 Mon at 06:49:46    365.239549 = 52wk  1d  05h 44m 57s
+ 1728 Dec 21 Tue at 12:44:47    365.246539 = 52wk  1d  05h 55m 01s
+ 1729 Dec 21 Wed at 18:25:18    365.236470 = 52wk  1d  05h 40m 31s
+ 1730 Dec 22 Fri at 00:15:21    365.243090 = 52wk  1d  05h 50m 03s
+ 1731 Dec 22 Sat at 06:08:38    365.245336 = 52wk  1d  05h 53m 17s
+ 1732 Dec 21 Sun at 11:49:24    365.236644 = 52wk  1d  05h 40m 46s
+ 1733 Dec 21 Mon at 17:43:28    365.245880 = 52wk  1d  05h 54m 04s
+ 1734 Dec 21 Tue at 23:36:31    365.245174 = 52wk  1d  05h 53m 03s
+ 1735 Dec 22 Thu at 05:27:52    365.243993 = 52wk  1d  05h 51m 21s
+ 1736 Dec 21 Fri at 11:28:36    365.250509 = 52wk  1d  06h 00m 44s
+ 1737 Dec 21 Sat at 17:13:51    365.239757 = 52wk  1d  05h 45m 15s
+ 1738 Dec 21 Sun at 23:04:13    365.243310 = 52wk  1d  05h 50m 22s
+ 1739 Dec 22 Tue at 05:01:07    365.247847 = 52wk  1d  05h 56m 54s
+ 1740 Dec 21 Wed at 10:43:56    365.238067 = 52wk  1d  05h 42m 49s
+ 1741 Dec 21 Thu at 16:35:37    365.244225 = 52wk  1d  05h 51m 41s
+ 1742 Dec 21 Fri at 22:23:03    365.241273 = 52wk  1d  05h 47m 26s
+ 1743 Dec 22 Sun at 04:05:35    365.237870 = 52wk  1d  05h 42m 32s
+ 1744 Dec 21 Mon at 09:57:55    365.244676 = 52wk  1d  05h 52m 20s
+ 1745 Dec 21 Tue at 15:40:57    365.238218 = 52wk  1d  05h 43m 02s
+ 1746 Dec 21 Wed at 21:30:37    365.242824 = 52wk  1d  05h 49m 40s
+ 1747 Dec 22 Fri at 03:28:48    365.248738 = 52wk  1d  05h 58m 11s
+ 1748 Dec 21 Sat at 09:12:22    365.238588 = 52wk  1d  05h 43m 34s
+ 1749 Dec 21 Sun at 15:02:26    365.243102 = 52wk  1d  05h 50m 04s
+ 1750 Dec 21 Mon at 20:50:40    365.241829 = 52wk  1d  05h 48m 14s
+ 1751 Dec 22 Wed at 02:37:08    365.240602 = 52wk  1d  05h 46m 28s
+ 1752 Dec 21 Thu at 08:32:48    365.246991 = 52wk  1d  05h 55m 40s
+ 1753 Dec 21 Fri at 14:20:18    365.241319 = 52wk  1d  05h 47m 30s
+ 1754 Dec 21 Sat at 20:09:31    365.242512 = 52wk  1d  05h 49m 13s
+ 1755 Dec 22 Mon at 02:05:57    365.247523 = 52wk  1d  05h 56m 26s
+ 1756 Dec 21 Tue at 07:51:26    365.239919 = 52wk  1d  05h 45m 29s
+ 1757 Dec 21 Wed at 13:42:41    365.243924 = 52wk  1d  05h 51m 15s
+ 1758 Dec 21 Thu at 19:37:56    365.246701 = 52wk  1d  05h 55m 15s
+ 1759 Dec 22 Sat at 01:28:12    365.243241 = 52wk  1d  05h 50m 16s
+ 1760 Dec 21 Sun at 07:22:09    365.245799 = 52wk  1d  05h 53m 57s
+ 1761 Dec 21 Mon at 13:08:00    365.240174 = 52wk  1d  05h 45m 51s
+ 1762 Dec 21 Tue at 18:52:38    365.239329 = 52wk  1d  05h 44m 38s
+ 1763 Dec 22 Thu at 00:45:52    365.245301 = 52wk  1d  05h 53m 14s
+ 1764 Dec 21 Fri at 06:30:43    365.239479 = 52wk  1d  05h 44m 51s
+ 1765 Dec 21 Sat at 12:15:07    365.239167 = 52wk  1d  05h 44m 24s
+ 1766 Dec 21 Sun at 18:04:38    365.242720 = 52wk  1d  05h 49m 31s
+ 1767 Dec 21 Mon at 23:48:25    365.238738 = 52wk  1d  05h 43m 47s
+ 1768 Dec 21 Wed at 05:37:36    365.242488 = 52wk  1d  05h 49m 11s
+ 1769 Dec 21 Thu at 11:27:37    365.243067 = 52wk  1d  05h 50m 01s
+ 1770 Dec 21 Fri at 17:19:02    365.244039 = 52wk  1d  05h 51m 25s
+ 1771 Dec 21 Sat at 23:18:16    365.249468 = 52wk  1d  05h 59m 14s
+ 1772 Dec 21 Mon at 05:08:54    365.243495 = 52wk  1d  05h 50m 38s
+ 1773 Dec 21 Tue at 10:56:36    365.241458 = 52wk  1d  05h 47m 42s
+ 1774 Dec 21 Wed at 16:49:18    365.244931 = 52wk  1d  05h 52m 42s
+ 1775 Dec 21 Thu at 22:40:04    365.243588 = 52wk  1d  05h 50m 46s
+ 1776 Dec 21 Sat at 04:31:39    365.244155 = 52wk  1d  05h 51m 35s
+ 1777 Dec 21 Sun at 10:21:10    365.242720 = 52wk  1d  05h 49m 31s
+ 1778 Dec 21 Mon at 16:08:19    365.241076 = 52wk  1d  05h 47m 09s
+ 1779 Dec 21 Tue at 21:59:03    365.243565 = 52wk  1d  05h 50m 44s
+ 1780 Dec 21 Thu at 03:45:05    365.240301 = 52wk  1d  05h 46m 02s
+ 1781 Dec 21 Fri at 09:31:38    365.240660 = 52wk  1d  05h 46m 33s
+ 1782 Dec 21 Sat at 15:22:50    365.243889 = 52wk  1d  05h 51m 12s
+ 1783 Dec 21 Sun at 21:14:00    365.243866 = 52wk  1d  05h 51m 10s
+ 1784 Dec 21 Tue at 03:01:04    365.241019 = 52wk  1d  05h 47m 04s
+ 1785 Dec 21 Wed at 08:47:15    365.240405 = 52wk  1d  05h 46m 11s
+ 1786 Dec 21 Thu at 14:34:58    365.241470 = 52wk  1d  05h 47m 43s
+ 1787 Dec 21 Fri at 20:26:01    365.243785 = 52wk  1d  05h 51m 03s
+ 1788 Dec 21 Sun at 02:16:10    365.243160 = 52wk  1d  05h 50m 09s
+ 1789 Dec 21 Mon at 08:02:49    365.240729 = 52wk  1d  05h 46m 39s
+ 1790 Dec 21 Tue at 13:52:53    365.243102 = 52wk  1d  05h 50m 04s
+ 1791 Dec 21 Wed at 19:45:12    365.244664 = 52wk  1d  05h 52m 19s
+ 1792 Dec 21 Fri at 01:34:17    365.242419 = 52wk  1d  05h 49m 05s
+ 1793 Dec 21 Sat at 07:27:39    365.245394 = 52wk  1d  05h 53m 22s
+ 1794 Dec 21 Sun at 13:24:17    365.247662 = 52wk  1d  05h 56m 38s
+ 1795 Dec 21 Mon at 19:18:15    365.245810 = 52wk  1d  05h 53m 58s
+ 1796 Dec 21 Wed at 01:09:54    365.244201 = 52wk  1d  05h 51m 39s
+ 1797 Dec 21 Thu at 06:54:10    365.239074 = 52wk  1d  05h 44m 16s
+ 1798 Dec 21 Fri at 12:41:16    365.241042 = 52wk  1d  05h 47m 06s
+ 1799 Dec 21 Sat at 18:32:09    365.243669 = 52wk  1d  05h 50m 53s
+ 1800 Dec 22 Mon at 00:16:30    365.239132 = 52wk  1d  05h 44m 21s
+ 1801 Dec 22 Tue at 06:02:04    365.239977 = 52wk  1d  05h 45m 34s
+ 1802 Dec 22 Wed at 11:50:58    365.242292 = 52wk  1d  05h 48m 54s
+ 1803 Dec 22 Thu at 17:36:15    365.239780 = 52wk  1d  05h 45m 17s
+ 1804 Dec 21 Fri at 23:24:26    365.241794 = 52wk  1d  05h 48m 11s
+ 1805 Dec 22 Sun at 05:13:37    365.242488 = 52wk  1d  05h 49m 11s
+ 1806 Dec 22 Mon at 11:04:16    365.243507 = 52wk  1d  05h 50m 39s
+ 1807 Dec 22 Tue at 17:01:12    365.247870 = 52wk  1d  05h 56m 56s
+ 1808 Dec 21 Wed at 22:50:03    365.242257 = 52wk  1d  05h 48m 51s
+ 1809 Dec 22 Fri at 04:38:03    365.241667 = 52wk  1d  05h 48m 00s
+ 1810 Dec 22 Sat at 10:34:21    365.247431 = 52wk  1d  05h 56m 18s
+ 1811 Dec 22 Sun at 16:25:31    365.243866 = 52wk  1d  05h 51m 10s
+ 1812 Dec 21 Mon at 22:16:40    365.243854 = 52wk  1d  05h 51m 09s
+ 1813 Dec 22 Wed at 04:07:40    365.243750 = 52wk  1d  05h 51m 00s
+ 1814 Dec 22 Thu at 09:51:40    365.238889 = 52wk  1d  05h 44m 00s
+ 1815 Dec 22 Fri at 15:43:36    365.244398 = 52wk  1d  05h 51m 56s
+ 1816 Dec 21 Sat at 21:30:27    365.240868 = 52wk  1d  05h 46m 51s
+ 1817 Dec 22 Mon at 03:16:52    365.240567 = 52wk  1d  05h 46m 25s
+ 1818 Dec 22 Tue at 09:14:30    365.248356 = 52wk  1d  05h 57m 38s
+ 1819 Dec 22 Wed at 15:02:09    365.241424 = 52wk  1d  05h 47m 39s
+ 1820 Dec 21 Thu at 20:48:24    365.240451 = 52wk  1d  05h 46m 15s
+ 1821 Dec 22 Sat at 02:36:00    365.241389 = 52wk  1d  05h 47m 36s
+ 1822 Dec 22 Sun at 08:18:20    365.237731 = 52wk  1d  05h 42m 20s
+ 1823 Dec 22 Mon at 14:11:25    365.245197 = 52wk  1d  05h 53m 05s
+ 1824 Dec 21 Tue at 19:59:28    365.241701 = 52wk  1d  05h 48m 03s
+ 1825 Dec 22 Thu at 01:43:08    365.238657 = 52wk  1d  05h 43m 40s
+ 1826 Dec 22 Fri at 07:39:40    365.247593 = 52wk  1d  05h 56m 32s
+ 1827 Dec 22 Sat at 13:27:43    365.241701 = 52wk  1d  05h 48m 03s
+ 1828 Dec 21 Sun at 19:18:40    365.243715 = 52wk  1d  05h 50m 57s
+ 1829 Dec 22 Tue at 01:15:23    365.247720 = 52wk  1d  05h 56m 43s
+ 1830 Dec 22 Wed at 07:05:05    365.242847 = 52wk  1d  05h 49m 42s
+ 1831 Dec 22 Thu at 13:01:43    365.247662 = 52wk  1d  05h 56m 38s
+ 1832 Dec 21 Fri at 18:51:51    365.243148 = 52wk  1d  05h 50m 08s
+ 1833 Dec 22 Sun at 00:33:40    365.237373 = 52wk  1d  05h 41m 49s
+ 1834 Dec 22 Mon at 06:30:08    365.247546 = 52wk  1d  05h 56m 28s
+ 1835 Dec 22 Tue at 12:18:19    365.241794 = 52wk  1d  05h 48m 11s
+ 1836 Dec 21 Wed at 18:02:29    365.239005 = 52wk  1d  05h 44m 10s
+ 1837 Dec 21 Thu at 23:53:23    365.243681 = 52wk  1d  05h 50m 54s
+ 1838 Dec 22 Sat at 05:33:25    365.236134 = 52wk  1d  05h 40m 02s
+ 1839 Dec 22 Sun at 11:22:06    365.242141 = 52wk  1d  05h 48m 41s
+ 1840 Dec 21 Mon at 17:12:38    365.243426 = 52wk  1d  05h 50m 32s
+ 1841 Dec 21 Tue at 22:55:39    365.238206 = 52wk  1d  05h 43m 01s
+ 1842 Dec 22 Thu at 04:55:32    365.249919 = 52wk  1d  05h 59m 53s
+ 1843 Dec 22 Fri at 10:47:39    365.244525 = 52wk  1d  05h 52m 07s
+ 1844 Dec 21 Sat at 16:31:04    365.238484 = 52wk  1d  05h 43m 25s
+ 1845 Dec 21 Sun at 22:26:52    365.247083 = 52wk  1d  05h 55m 48s
+ 1846 Dec 22 Tue at 04:12:15    365.239850 = 52wk  1d  05h 45m 23s
+ 1847 Dec 22 Wed at 10:05:02    365.244988 = 52wk  1d  05h 52m 47s
+ 1848 Dec 21 Thu at 15:59:53    365.246424 = 52wk  1d  05h 54m 51s
+ 1849 Dec 21 Fri at 21:40:51    365.236782 = 52wk  1d  05h 40m 58s
+ 1850 Dec 22 Sun at 03:37:35    365.247731 = 52wk  1d  05h 56m 44s
+ 1851 Dec 22 Mon at 09:28:44    365.243854 = 52wk  1d  05h 51m 09s
+ 1852 Dec 21 Tue at 15:12:36    365.238796 = 52wk  1d  05h 43m 52s
+ 1853 Dec 21 Wed at 21:10:52    365.248796 = 52wk  1d  05h 58m 16s
+ 1854 Dec 22 Fri at 02:58:21    365.241308 = 52wk  1d  05h 47m 29s
+ 1855 Dec 22 Sat at 08:47:25    365.242407 = 52wk  1d  05h 49m 04s
+ 1856 Dec 21 Sun at 14:38:39    365.243912 = 52wk  1d  05h 51m 14s
+ 1857 Dec 21 Mon at 20:15:41    365.234051 = 52wk  1d  05h 37m 02s
+ 1858 Dec 22 Wed at 02:09:56    365.246007 = 52wk  1d  05h 54m 15s
+ 1859 Dec 22 Thu at 08:00:56    365.243750 = 52wk  1d  05h 51m 00s
+ 1860 Dec 21 Fri at 13:41:20    365.236389 = 52wk  1d  05h 40m 24s
+ 1861 Dec 21 Sat at 19:33:55    365.244850 = 52wk  1d  05h 52m 35s
+ 1862 Dec 22 Mon at 01:18:46    365.239479 = 52wk  1d  05h 44m 51s
+ 1863 Dec 22 Tue at 07:06:04    365.241181 = 52wk  1d  05h 47m 18s
+ 1864 Dec 21 Wed at 13:03:36    365.248287 = 52wk  1d  05h 57m 32s
+ 1865 Dec 21 Thu at 18:49:38    365.240301 = 52wk  1d  05h 46m 02s
+ 1866 Dec 22 Sat at 00:49:28    365.249884 = 52wk  1d  05h 59m 50s
+ 1867 Dec 22 Sun at 06:47:01    365.248299 = 52wk  1d  05h 57m 33s
+ 1868 Dec 21 Mon at 12:28:03    365.236829 = 52wk  1d  05h 41m 02s
+ 1869 Dec 21 Tue at 18:23:34    365.246887 = 52wk  1d  05h 55m 31s
+ 1870 Dec 22 Thu at 00:13:11    365.242789 = 52wk  1d  05h 49m 37s
+ 1871 Dec 22 Fri at 05:59:10    365.240266 = 52wk  1d  05h 45m 59s
+ 1872 Dec 21 Sat at 11:53:32    365.246088 = 52wk  1d  05h 54m 22s
+ 1873 Dec 21 Sun at 17:32:36    365.235463 = 52wk  1d  05h 39m 04s
+ 1874 Dec 21 Mon at 23:22:08    365.242731 = 52wk  1d  05h 49m 32s
+ 1875 Dec 22 Wed at 05:15:54    365.245671 = 52wk  1d  05h 53m 46s
+ 1876 Dec 21 Thu at 10:54:22    365.235046 = 52wk  1d  05h 38m 28s
+ 1877 Dec 21 Fri at 16:50:20    365.247199 = 52wk  1d  05h 55m 58s
+ 1878 Dec 21 Sat at 22:41:18    365.243727 = 52wk  1d  05h 50m 58s
+ 1879 Dec 22 Mon at 04:24:29    365.238322 = 52wk  1d  05h 43m 11s
+ 1880 Dec 21 Tue at 10:18:18    365.245706 = 52wk  1d  05h 53m 49s
+ 1881 Dec 21 Wed at 16:00:33    365.237674 = 52wk  1d  05h 42m 15s
+ 1882 Dec 21 Thu at 21:53:40    365.245220 = 52wk  1d  05h 53m 07s
+ 1883 Dec 22 Sat at 03:52:06    365.248912 = 52wk  1d  05h 58m 26s
+ 1884 Dec 21 Sun at 09:33:35    365.237141 = 52wk  1d  05h 41m 29s
+ 1885 Dec 21 Mon at 15:27:32    365.245799 = 52wk  1d  05h 53m 57s
+ 1886 Dec 21 Tue at 21:19:56    365.244722 = 52wk  1d  05h 52m 24s
+ 1887 Dec 22 Thu at 03:04:56    365.239583 = 52wk  1d  05h 45m 00s
+ 1888 Dec 21 Fri at 09:03:15    365.248831 = 52wk  1d  05h 58m 19s
+ 1889 Dec 21 Sat at 14:51:58    365.242164 = 52wk  1d  05h 48m 43s
+ 1890 Dec 21 Sun at 20:44:59    365.245150 = 52wk  1d  05h 53m 01s
+ 1891 Dec 22 Tue at 02:40:36    365.246956 = 52wk  1d  05h 55m 37s
+ 1892 Dec 21 Wed at 08:19:23    365.235266 = 52wk  1d  05h 38m 47s
+ 1893 Dec 21 Thu at 14:07:26    365.241701 = 52wk  1d  05h 48m 03s
+ 1894 Dec 21 Fri at 19:58:19    365.243669 = 52wk  1d  05h 50m 53s
+ 1895 Dec 22 Sun at 01:38:45    365.236412 = 52wk  1d  05h 40m 26s
+ 1896 Dec 21 Mon at 07:29:26    365.243530 = 52wk  1d  05h 50m 41s
+ 1897 Dec 21 Tue at 13:12:51    365.238484 = 52wk  1d  05h 43m 25s
+ 1898 Dec 21 Wed at 18:59:13    365.240532 = 52wk  1d  05h 46m 22s
+ 1899 Dec 22 Fri at 00:56:15    365.247940 = 52wk  1d  05h 57m 02s
+ 1900 Dec 22 Sat at 06:41:39    365.239861 = 52wk  1d  05h 45m 24s
+ 1901 Dec 22 Sun at 12:36:42    365.246563 = 52wk  1d  05h 55m 03s
+ 1902 Dec 22 Mon at 18:35:39    365.249271 = 52wk  1d  05h 58m 57s
+ 1903 Dec 23 Wed at 00:20:34    365.239525 = 52wk  1d  05h 44m 55s
+ 1904 Dec 22 Thu at 06:14:06    365.245509 = 52wk  1d  05h 53m 32s
+ 1905 Dec 22 Fri at 12:03:53    365.242905 = 52wk  1d  05h 49m 47s
+ 1906 Dec 22 Sat at 17:53:29    365.242778 = 52wk  1d  05h 49m 36s
+ 1907 Dec 22 Sun at 23:51:46    365.248808 = 52wk  1d  05h 58m 17s
+ 1908 Dec 22 Tue at 05:33:40    365.237431 = 52wk  1d  05h 41m 54s
+ 1909 Dec 22 Wed at 11:20:03    365.240544 = 52wk  1d  05h 46m 23s
+ 1910 Dec 22 Thu at 17:12:00    365.244410 = 52wk  1d  05h 51m 57s
+ 1911 Dec 22 Fri at 22:53:29    365.237141 = 52wk  1d  05h 41m 29s
+ 1912 Dec 22 Sun at 04:45:00    365.244109 = 52wk  1d  05h 51m 31s
+ 1913 Dec 22 Mon at 10:35:12    365.243194 = 52wk  1d  05h 50m 12s
+ 1914 Dec 22 Tue at 16:22:45    365.241354 = 52wk  1d  05h 47m 33s
+ 1915 Dec 22 Wed at 22:16:08    365.245405 = 52wk  1d  05h 53m 23s
+ 1916 Dec 22 Fri at 03:58:55    365.238044 = 52wk  1d  05h 42m 47s
+ 1917 Dec 22 Sat at 09:46:04    365.241076 = 52wk  1d  05h 47m 09s
+ 1918 Dec 22 Sun at 15:41:54    365.247106 = 52wk  1d  05h 55m 50s
+ 1919 Dec 22 Mon at 21:27:29    365.239988 = 52wk  1d  05h 45m 35s
+ 1920 Dec 22 Wed at 03:17:23    365.242986 = 52wk  1d  05h 49m 54s
+ 1921 Dec 22 Thu at 09:07:51    365.243380 = 52wk  1d  05h 50m 28s
+ 1922 Dec 22 Fri at 14:57:21    365.242708 = 52wk  1d  05h 49m 30s
+ 1923 Dec 22 Sat at 20:53:41    365.247454 = 52wk  1d  05h 56m 20s
+ 1924 Dec 22 Mon at 02:45:54    365.244595 = 52wk  1d  05h 52m 13s
+ 1925 Dec 22 Tue at 08:37:04    365.243866 = 52wk  1d  05h 51m 10s
+ 1926 Dec 22 Wed at 14:33:46    365.247708 = 52wk  1d  05h 56m 42s
+ 1927 Dec 22 Thu at 20:18:55    365.239688 = 52wk  1d  05h 45m 09s
+ 1928 Dec 22 Sat at 02:04:05    365.239699 = 52wk  1d  05h 45m 10s
+ 1929 Dec 22 Sun at 07:53:10    365.242419 = 52wk  1d  05h 49m 05s
+ 1930 Dec 22 Mon at 13:39:59    365.240845 = 52wk  1d  05h 46m 49s
+ 1931 Dec 22 Tue at 19:30:00    365.243067 = 52wk  1d  05h 50m 01s
+ 1932 Dec 22 Thu at 01:14:40    365.239352 = 52wk  1d  05h 44m 40s
+ 1933 Dec 22 Fri at 06:57:55    365.238368 = 52wk  1d  05h 43m 15s
+ 1934 Dec 22 Sat at 12:49:50    365.244387 = 52wk  1d  05h 51m 55s
+ 1935 Dec 22 Sun at 18:37:32    365.241458 = 52wk  1d  05h 47m 42s
+ 1936 Dec 22 Tue at 00:27:06    365.242755 = 52wk  1d  05h 49m 34s
+ 1937 Dec 22 Wed at 06:22:05    365.246516 = 52wk  1d  05h 54m 59s
+ 1938 Dec 22 Thu at 12:13:49    365.244259 = 52wk  1d  05h 51m 44s
+ 1939 Dec 22 Fri at 18:06:24    365.244850 = 52wk  1d  05h 52m 35s
+ 1940 Dec 21 Sat at 23:55:10    365.242199 = 52wk  1d  05h 48m 46s
+ 1941 Dec 22 Mon at 05:44:36    365.242662 = 52wk  1d  05h 49m 26s
+ 1942 Dec 22 Tue at 11:40:00    365.246806 = 52wk  1d  05h 55m 24s
+ 1943 Dec 22 Wed at 17:29:34    365.242755 = 52wk  1d  05h 49m 34s
+ 1944 Dec 21 Thu at 23:15:16    365.240069 = 52wk  1d  05h 45m 42s
+ 1945 Dec 22 Sat at 05:04:02    365.242199 = 52wk  1d  05h 48m 46s
+ 1946 Dec 22 Sun at 10:53:49    365.242905 = 52wk  1d  05h 49m 47s
+ 1947 Dec 22 Mon at 16:43:15    365.242662 = 52wk  1d  05h 49m 26s
+ 1948 Dec 21 Tue at 22:33:46    365.243414 = 52wk  1d  05h 50m 31s
+ 1949 Dec 22 Thu at 04:23:23    365.242789 = 52wk  1d  05h 49m 37s
+ 1950 Dec 22 Fri at 10:13:51    365.243380 = 52wk  1d  05h 50m 28s
+ 1951 Dec 22 Sat at 16:00:35    365.240787 = 52wk  1d  05h 46m 44s
+ 1952 Dec 21 Sun at 21:43:40    365.238252 = 52wk  1d  05h 43m 05s
+ 1953 Dec 22 Tue at 03:31:59    365.241887 = 52wk  1d  05h 48m 19s
+ 1954 Dec 22 Wed at 09:24:53    365.245069 = 52wk  1d  05h 52m 54s
+ 1955 Dec 22 Thu at 15:11:26    365.240660 = 52wk  1d  05h 46m 33s
+ 1956 Dec 21 Fri at 21:00:01    365.242072 = 52wk  1d  05h 48m 35s
+ 1957 Dec 22 Sun at 02:49:10    365.242465 = 52wk  1d  05h 49m 09s
+ 1958 Dec 22 Mon at 08:40:16    365.243819 = 52wk  1d  05h 51m 06s
+ 1959 Dec 22 Tue at 14:34:54    365.246273 = 52wk  1d  05h 54m 38s
+ 1960 Dec 21 Wed at 20:26:30    365.244167 = 52wk  1d  05h 51m 36s
+ 1961 Dec 22 Fri at 02:20:03    365.245521 = 52wk  1d  05h 53m 33s
+ 1962 Dec 22 Sat at 08:15:52    365.247095 = 52wk  1d  05h 55m 49s
+ 1963 Dec 22 Sun at 14:02:29    365.240706 = 52wk  1d  05h 46m 37s
+ 1964 Dec 21 Mon at 19:50:09    365.241435 = 52wk  1d  05h 47m 40s
+ 1965 Dec 22 Wed at 01:41:03    365.243681 = 52wk  1d  05h 50m 54s
+ 1966 Dec 22 Thu at 07:28:48    365.241493 = 52wk  1d  05h 47m 45s
+ 1967 Dec 22 Fri at 13:16:58    365.241782 = 52wk  1d  05h 48m 10s
+ 1968 Dec 21 Sat at 19:00:26    365.238519 = 52wk  1d  05h 43m 28s
+ 1969 Dec 22 Mon at 00:44:23    365.238854 = 52wk  1d  05h 43m 57s
+ 1970 Dec 22 Tue at 06:36:22    365.244433 = 52wk  1d  05h 51m 59s
+ 1971 Dec 22 Wed at 12:24:38    365.241852 = 52wk  1d  05h 48m 16s
+ 1972 Dec 21 Thu at 18:13:38    365.242361 = 52wk  1d  05h 49m 00s
+ 1973 Dec 22 Sat at 00:08:28    365.246412 = 52wk  1d  05h 54m 50s
+ 1974 Dec 22 Sun at 05:56:43    365.241840 = 52wk  1d  05h 48m 15s
+ 1975 Dec 22 Mon at 11:46:21    365.242801 = 52wk  1d  05h 49m 38s
+ 1976 Dec 21 Tue at 17:35:57    365.242778 = 52wk  1d  05h 49m 36s
+ 1977 Dec 21 Wed at 23:23:58    365.241678 = 52wk  1d  05h 48m 01s
+ 1978 Dec 22 Fri at 05:21:48    365.248495 = 52wk  1d  05h 57m 50s
+ 1979 Dec 22 Sat at 11:10:37    365.242234 = 52wk  1d  05h 48m 49s
+ 1980 Dec 21 Sun at 16:56:58    365.240521 = 52wk  1d  05h 46m 21s
+ 1981 Dec 21 Mon at 22:51:26    365.246157 = 52wk  1d  05h 54m 28s
+ 1982 Dec 22 Wed at 04:39:03    365.241400 = 52wk  1d  05h 47m 37s
+ 1983 Dec 22 Thu at 10:30:50    365.244294 = 52wk  1d  05h 51m 47s
+ 1984 Dec 21 Fri at 16:23:44    365.245069 = 52wk  1d  05h 52m 54s
+ 1985 Dec 21 Sat at 22:08:35    365.239479 = 52wk  1d  05h 44m 51s
+ 1986 Dec 22 Mon at 04:03:04    365.246169 = 52wk  1d  05h 54m 29s
+ 1987 Dec 22 Tue at 09:46:49    365.238715 = 52wk  1d  05h 43m 45s
+ 1988 Dec 21 Wed at 15:28:50    365.237512 = 52wk  1d  05h 42m 01s
+ 1989 Dec 21 Thu at 21:22:58    365.245926 = 52wk  1d  05h 54m 08s
+ 1990 Dec 22 Sat at 03:07:57    365.239572 = 52wk  1d  05h 44m 59s
+ 1991 Dec 22 Sun at 08:54:37    365.240741 = 52wk  1d  05h 46m 40s
+ 1992 Dec 21 Mon at 14:44:13    365.242778 = 52wk  1d  05h 49m 36s
+ 1993 Dec 21 Tue at 20:26:49    365.237917 = 52wk  1d  05h 42m 36s
+ 1994 Dec 22 Thu at 02:23:44    365.247859 = 52wk  1d  05h 56m 55s
+ 1995 Dec 22 Fri at 08:17:50    365.245903 = 52wk  1d  05h 54m 06s
+ 1996 Dec 21 Sat at 14:06:56    365.242431 = 52wk  1d  05h 49m 06s
+ 1997 Dec 21 Sun at 20:08:05    365.250799 = 52wk  1d  06h 01m 09s
+ 1998 Dec 22 Tue at 01:57:31    365.242662 = 52wk  1d  05h 49m 26s
+ 1999 Dec 22 Wed at 07:44:53    365.241227 = 52wk  1d  05h 47m 22s
+ 2000 Dec 21 Thu at 13:38:30    365.245567 = 52wk  1d  05h 53m 37s
+ 2001 Dec 21 Fri at 19:22:34    365.238935 = 52wk  1d  05h 44m 04s
+ 2002 Dec 22 Sun at 01:15:26    365.245046 = 52wk  1d  05h 52m 52s
+ 2003 Dec 22 Mon at 07:04:53    365.242674 = 52wk  1d  05h 49m 27s
+ 2004 Dec 21 Tue at 12:42:41    365.234583 = 52wk  1d  05h 37m 48s
+ 2005 Dec 21 Wed at 18:36:01    365.245370 = 52wk  1d  05h 53m 20s
+ 2006 Dec 22 Fri at 00:23:10    365.241076 = 52wk  1d  05h 47m 09s
+ 2007 Dec 22 Sat at 06:08:54    365.240093 = 52wk  1d  05h 45m 44s
+ 2008 Dec 21 Sun at 12:04:51    365.247187 = 52wk  1d  05h 55m 57s
+ 2009 Dec 21 Mon at 17:47:53    365.238218 = 52wk  1d  05h 43m 02s
+ 2010 Dec 21 Tue at 23:39:33    365.244213 = 52wk  1d  05h 51m 40s
+ 2011 Dec 22 Thu at 05:31:09    365.244167 = 52wk  1d  05h 51m 36s
+ 2012 Dec 21 Fri at 11:12:43    365.237199 = 52wk  1d  05h 41m 34s
+ 2013 Dec 21 Sat at 17:12:07    365.249583 = 52wk  1d  05h 59m 24s
+ 2014 Dec 21 Sun at 23:04:08    365.244456 = 52wk  1d  05h 52m 01s
+ 2015 Dec 22 Tue at 04:49:04    365.239537 = 52wk  1d  05h 44m 56s
+ 2016 Dec 21 Wed at 10:45:18    365.247384 = 52wk  1d  05h 56m 14s
+ 2017 Dec 21 Thu at 16:29:05    365.238738 = 52wk  1d  05h 43m 47s
+ 2018 Dec 21 Fri at 22:23:53    365.246389 = 52wk  1d  05h 54m 48s
+ 2019 Dec 22 Sun at 04:20:34    365.247697 = 52wk  1d  05h 56m 41s
+ 2020 Dec 21 Mon at 10:03:29    365.238137 = 52wk  1d  05h 42m 55s
+ 2021 Dec 21 Tue at 16:00:26    365.247882 = 52wk  1d  05h 56m 57s
+ 2022 Dec 21 Wed at 21:49:21    365.242303 = 52wk  1d  05h 48m 55s
+ 2023 Dec 22 Fri at 03:28:30    365.235521 = 52wk  1d  05h 39m 09s
+ 2024 Dec 21 Sat at 09:21:42    365.245278 = 52wk  1d  05h 53m 12s
+ 2025 Dec 21 Sun at 15:04:13    365.237859 = 52wk  1d  05h 42m 31s
+ 2026 Dec 21 Mon at 20:51:22    365.241076 = 52wk  1d  05h 47m 09s
+ 2027 Dec 22 Wed at 02:43:17    365.244387 = 52wk  1d  05h 51m 55s
+ 2028 Dec 21 Thu at 08:20:48    365.234387 = 52wk  1d  05h 37m 31s
+ 2029 Dec 21 Fri at 14:15:14    365.246134 = 52wk  1d  05h 54m 26s
+ 2030 Dec 21 Sat at 20:10:46    365.246898 = 52wk  1d  05h 55m 32s
+ 2031 Dec 22 Mon at 01:56:41    365.240220 = 52wk  1d  05h 45m 55s
+ 2032 Dec 21 Tue at 07:57:04    365.250266 = 52wk  1d  06h 00m 23s
+ 2033 Dec 21 Wed at 13:47:08    365.243102 = 52wk  1d  05h 50m 04s
+ 2034 Dec 21 Thu at 19:35:08    365.241667 = 52wk  1d  05h 48m 00s
+ 2035 Dec 22 Sat at 01:32:01    365.247836 = 52wk  1d  05h 56m 53s
+ 2036 Dec 21 Sun at 07:14:01    365.237500 = 52wk  1d  05h 42m 00s
+ 2037 Dec 21 Mon at 13:08:53    365.246435 = 52wk  1d  05h 54m 52s
+ 2038 Dec 21 Tue at 19:03:28    365.246238 = 52wk  1d  05h 54m 35s
+ 2039 Dec 22 Thu at 00:41:45    365.234919 = 52wk  1d  05h 38m 17s
+ 2040 Dec 21 Fri at 06:34:00    365.244618 = 52wk  1d  05h 52m 15s
+ 2041 Dec 21 Sat at 12:19:30    365.239931 = 52wk  1d  05h 45m 30s
+ 2042 Dec 21 Sun at 18:05:14    365.240093 = 52wk  1d  05h 45m 44s
+ 2043 Dec 22 Tue at 00:02:25    365.248044 = 52wk  1d  05h 57m 11s
+ 2044 Dec 21 Wed at 05:44:47    365.237755 = 52wk  1d  05h 42m 22s
+ 2045 Dec 21 Thu at 11:36:19    365.244120 = 52wk  1d  05h 51m 32s
+ 2046 Dec 21 Fri at 17:29:42    365.245405 = 52wk  1d  05h 53m 23s
+ 2047 Dec 21 Sat at 23:08:28    365.235255 = 52wk  1d  05h 38m 46s
+ 2048 Dec 21 Mon at 05:03:30    365.246551 = 52wk  1d  05h 55m 02s
+ 2049 Dec 21 Tue at 10:53:26    365.243009 = 52wk  1d  05h 49m 56s
+ 2050 Dec 21 Wed at 16:40:00    365.240671 = 52wk  1d  05h 46m 34s
+ 2051 Dec 21 Thu at 22:35:26    365.246829 = 52wk  1d  05h 55m 26s
+ 2052 Dec 21 Sat at 04:18:33    365.238275 = 52wk  1d  05h 43m 07s
+ 2053 Dec 21 Sun at 10:11:18    365.244965 = 52wk  1d  05h 52m 45s
+ 2054 Dec 21 Mon at 16:11:22    365.250046 = 52wk  1d  06h 00m 04s
+ 2055 Dec 21 Tue at 21:57:04    365.240069 = 52wk  1d  05h 45m 42s
+ 2056 Dec 21 Thu at 03:53:06    365.247245 = 52wk  1d  05h 56m 02s
+ 2057 Dec 21 Fri at 09:44:22    365.243935 = 52wk  1d  05h 51m 16s
+ 2058 Dec 21 Sat at 15:26:31    365.237604 = 52wk  1d  05h 42m 09s
+ 2059 Dec 21 Sun at 21:19:31    365.245139 = 52wk  1d  05h 53m 00s
+ 2060 Dec 21 Tue at 03:03:02    365.238553 = 52wk  1d  05h 43m 31s
+ 2061 Dec 21 Wed at 08:50:28    365.241273 = 52wk  1d  05h 47m 26s
+ 2062 Dec 21 Thu at 14:44:20    365.245741 = 52wk  1d  05h 53m 52s
+ 2063 Dec 21 Fri at 20:22:48    365.235046 = 52wk  1d  05h 38m 28s
+ 2064 Dec 21 Sun at 02:10:29    365.241447 = 52wk  1d  05h 47m 41s
+ 2065 Dec 21 Mon at 08:02:31    365.244468 = 52wk  1d  05h 52m 02s
+ 2066 Dec 21 Tue at 13:47:19    365.239444 = 52wk  1d  05h 44m 48s
+ 2067 Dec 21 Wed at 19:44:55    365.248333 = 52wk  1d  05h 57m 36s
+ 2068 Dec 21 Fri at 01:34:31    365.242778 = 52wk  1d  05h 49m 36s
+ 2069 Dec 21 Sat at 07:23:56    365.242650 = 52wk  1d  05h 49m 25s
+ 2070 Dec 21 Sun at 13:21:14    365.248125 = 52wk  1d  05h 57m 18s
+ 2071 Dec 21 Mon at 19:05:48    365.239282 = 52wk  1d  05h 44m 34s
+ 2072 Dec 21 Wed at 00:57:58    365.244560 = 52wk  1d  05h 52m 10s
+ 2073 Dec 21 Thu at 06:52:42    365.246343 = 52wk  1d  05h 54m 44s
+ 2074 Dec 21 Fri at 12:37:16    365.239282 = 52wk  1d  05h 44m 34s
+ 2075 Dec 21 Sat at 18:29:08    365.244352 = 52wk  1d  05h 51m 52s
+ 2076 Dec 21 Mon at 00:15:29    365.240521 = 52wk  1d  05h 46m 21s
+ 2077 Dec 21 Tue at 06:02:58    365.241308 = 52wk  1d  05h 47m 29s
+ 2078 Dec 21 Wed at 12:00:08    365.248032 = 52wk  1d  05h 57m 10s
+ 2079 Dec 21 Thu at 17:46:14    365.240347 = 52wk  1d  05h 46m 06s
+ 2080 Dec 20 Fri at 23:35:04    365.242245 = 52wk  1d  05h 48m 50s
+ 2081 Dec 21 Sun at 05:24:49    365.242882 = 52wk  1d  05h 49m 45s
+ 2082 Dec 21 Mon at 11:07:00    365.237627 = 52wk  1d  05h 42m 11s
+ 2083 Dec 21 Tue at 16:55:44    365.242176 = 52wk  1d  05h 48m 44s
+ 2084 Dec 20 Wed at 22:43:42    365.241644 = 52wk  1d  05h 47m 58s
+ 2085 Dec 21 Fri at 04:31:12    365.241319 = 52wk  1d  05h 47m 30s
+ 2086 Dec 21 Sat at 10:25:11    365.245822 = 52wk  1d  05h 53m 59s
+ 2087 Dec 21 Sun at 16:11:04    365.240197 = 52wk  1d  05h 45m 53s
+ 2088 Dec 20 Mon at 21:58:48    365.241481 = 52wk  1d  05h 47m 44s
+ 2089 Dec 21 Wed at 03:54:42    365.247153 = 52wk  1d  05h 55m 54s
+ 2090 Dec 21 Thu at 09:46:18    365.244167 = 52wk  1d  05h 51m 36s
+ 2091 Dec 21 Fri at 15:41:19    365.246539 = 52wk  1d  05h 55m 01s
+ 2092 Dec 20 Sat at 21:34:43    365.245417 = 52wk  1d  05h 53m 24s
+ 2093 Dec 21 Mon at 03:23:35    365.242269 = 52wk  1d  05h 48m 52s
+ 2094 Dec 21 Tue at 09:16:12    365.244873 = 52wk  1d  05h 52m 37s
+ 2095 Dec 21 Wed at 15:03:43    365.241331 = 52wk  1d  05h 47m 31s
+ 2096 Dec 20 Thu at 20:49:08    365.239873 = 52wk  1d  05h 45m 25s
+ 2097 Dec 21 Sat at 02:40:22    365.243912 = 52wk  1d  05h 51m 14s
+ 2098 Dec 21 Sun at 08:23:47    365.238484 = 52wk  1d  05h 43m 25s
+ 2099 Dec 21 Mon at 14:07:19    365.238565 = 52wk  1d  05h 43m 32s
+ 2100 Dec 21 Tue at 19:53:54    365.240683 = 52wk  1d  05h 46m 35s
+ 2101 Dec 22 Thu at 01:42:02    365.241759 = 52wk  1d  05h 48m 08s
+ 2102 Dec 22 Fri at 07:35:54    365.245741 = 52wk  1d  05h 53m 52s
+ 2103 Dec 22 Sat at 13:27:12    365.243958 = 52wk  1d  05h 51m 18s
+ 2104 Dec 21 Sun at 19:15:35    365.241933 = 52wk  1d  05h 48m 23s
+ 2105 Dec 22 Tue at 01:06:59    365.244028 = 52wk  1d  05h 51m 24s
+ 2106 Dec 22 Wed at 06:56:20    365.242604 = 52wk  1d  05h 49m 21s
+ 2107 Dec 22 Thu at 12:45:35    365.242535 = 52wk  1d  05h 49m 15s
+ 2108 Dec 21 Fri at 18:37:58    365.244711 = 52wk  1d  05h 52m 23s
+ 2109 Dec 22 Sun at 00:30:48    365.245023 = 52wk  1d  05h 52m 50s
+ 2110 Dec 22 Mon at 06:22:15    365.244063 = 52wk  1d  05h 51m 27s
+ 2111 Dec 22 Tue at 12:11:16    365.242373 = 52wk  1d  05h 49m 01s
+ 2112 Dec 21 Wed at 17:59:36    365.241898 = 52wk  1d  05h 48m 20s
+ 2113 Dec 21 Thu at 23:50:03    365.243368 = 52wk  1d  05h 50m 27s
+ 2114 Dec 22 Sat at 05:42:44    365.244919 = 52wk  1d  05h 52m 41s
+ 2115 Dec 22 Sun at 11:30:21    365.241400 = 52wk  1d  05h 47m 37s
+ 2116 Dec 21 Mon at 17:17:44    365.241238 = 52wk  1d  05h 47m 23s
+ 2117 Dec 21 Tue at 23:06:43    365.242350 = 52wk  1d  05h 48m 59s
+ 2118 Dec 22 Thu at 04:52:11    365.239907 = 52wk  1d  05h 45m 28s
+ 2119 Dec 22 Fri at 10:40:03    365.241574 = 52wk  1d  05h 47m 52s
+ 2120 Dec 21 Sat at 16:27:27    365.241250 = 52wk  1d  05h 47m 24s
+ 2121 Dec 21 Sun at 22:14:39    365.241111 = 52wk  1d  05h 47m 12s
+ 2122 Dec 22 Tue at 04:04:25    365.242894 = 52wk  1d  05h 49m 46s
+ 2123 Dec 22 Wed at 09:49:43    365.239792 = 52wk  1d  05h 45m 18s
+ 2124 Dec 21 Thu at 15:38:17    365.242060 = 52wk  1d  05h 48m 34s
+ 2125 Dec 21 Fri at 21:35:32    365.248090 = 52wk  1d  05h 57m 15s
+ 2126 Dec 22 Sun at 03:29:03    365.245498 = 52wk  1d  05h 53m 31s
+ 2127 Dec 22 Mon at 09:24:20    365.246725 = 52wk  1d  05h 55m 17s
+ 2128 Dec 21 Tue at 15:16:42    365.244699 = 52wk  1d  05h 52m 22s
+ 2129 Dec 21 Wed at 21:05:18    365.242083 = 52wk  1d  05h 48m 36s
+ 2130 Dec 22 Fri at 02:56:36    365.243958 = 52wk  1d  05h 51m 18s
+ 2131 Dec 22 Sat at 08:43:50    365.241134 = 52wk  1d  05h 47m 14s
+ 2132 Dec 21 Sun at 14:30:00    365.240394 = 52wk  1d  05h 46m 10s
+ 2133 Dec 21 Mon at 20:22:42    365.244931 = 52wk  1d  05h 52m 42s
+ 2134 Dec 22 Wed at 02:07:06    365.239167 = 52wk  1d  05h 44m 24s
+ 2135 Dec 22 Thu at 07:51:57    365.239479 = 52wk  1d  05h 44m 51s
+ 2136 Dec 21 Fri at 13:41:21    365.242639 = 52wk  1d  05h 49m 24s
+ 2137 Dec 21 Sat at 19:27:27    365.240347 = 52wk  1d  05h 46m 06s
+ 2138 Dec 22 Mon at 01:20:54    365.245451 = 52wk  1d  05h 53m 27s
+ 2139 Dec 22 Tue at 07:10:43    365.242928 = 52wk  1d  05h 49m 49s
+ 2140 Dec 21 Wed at 12:55:09    365.239190 = 52wk  1d  05h 44m 26s
+ 2141 Dec 21 Thu at 18:49:41    365.246204 = 52wk  1d  05h 54m 32s
+ 2142 Dec 22 Sat at 00:37:41    365.241667 = 52wk  1d  05h 48m 00s
+ 2143 Dec 22 Sun at 06:26:26    365.242188 = 52wk  1d  05h 48m 45s
+ 2144 Dec 21 Mon at 12:22:48    365.247477 = 52wk  1d  05h 56m 22s
+ 2145 Dec 21 Tue at 18:08:31    365.240081 = 52wk  1d  05h 45m 43s
+ 2146 Dec 22 Thu at 00:00:27    365.244398 = 52wk  1d  05h 51m 56s
+ 2147 Dec 22 Fri at 05:50:30    365.243090 = 52wk  1d  05h 50m 03s
+ 2148 Dec 21 Sat at 11:34:52    365.239144 = 52wk  1d  05h 44m 22s
+ 2149 Dec 21 Sun at 17:34:30    365.249745 = 52wk  1d  05h 59m 38s
+ 2150 Dec 21 Mon at 23:26:08    365.244190 = 52wk  1d  05h 51m 38s
+ 2151 Dec 22 Wed at 05:13:50    365.241458 = 52wk  1d  05h 47m 42s
+ 2152 Dec 21 Thu at 11:07:07    365.245336 = 52wk  1d  05h 53m 17s
+ 2153 Dec 21 Fri at 16:48:45    365.237245 = 52wk  1d  05h 41m 38s
+ 2154 Dec 21 Sat at 22:36:58    365.241817 = 52wk  1d  05h 48m 13s
+ 2155 Dec 22 Mon at 04:26:37    365.242813 = 52wk  1d  05h 49m 39s
+ 2156 Dec 21 Tue at 10:06:48    365.236238 = 52wk  1d  05h 40m 11s
+ 2157 Dec 21 Wed at 16:00:50    365.245856 = 52wk  1d  05h 54m 02s
+ 2158 Dec 21 Thu at 21:47:17    365.240590 = 52wk  1d  05h 46m 27s
+ 2159 Dec 22 Sat at 03:30:26    365.238299 = 52wk  1d  05h 43m 09s
+ 2160 Dec 21 Sun at 09:25:49    365.246794 = 52wk  1d  05h 55m 23s
+ 2161 Dec 21 Mon at 15:14:58    365.242465 = 52wk  1d  05h 49m 09s
+ 2162 Dec 21 Tue at 21:08:56    365.245810 = 52wk  1d  05h 53m 58s
+ 2163 Dec 22 Thu at 03:05:31    365.247627 = 52wk  1d  05h 56m 35s
+ 2164 Dec 21 Fri at 08:48:45    365.238356 = 52wk  1d  05h 43m 14s
+ 2165 Dec 21 Sat at 14:45:24    365.247674 = 52wk  1d  05h 56m 39s
+ 2166 Dec 21 Sun at 20:37:52    365.244769 = 52wk  1d  05h 52m 28s
+ 2167 Dec 22 Tue at 02:22:13    365.239132 = 52wk  1d  05h 44m 21s
+ 2168 Dec 21 Wed at 08:18:52    365.247674 = 52wk  1d  05h 56m 39s
+ 2169 Dec 21 Thu at 14:03:47    365.239525 = 52wk  1d  05h 44m 55s
+ 2170 Dec 21 Fri at 19:49:02    365.239757 = 52wk  1d  05h 45m 15s
+ 2171 Dec 22 Sun at 01:40:44    365.244236 = 52wk  1d  05h 51m 42s
+ 2172 Dec 21 Mon at 07:20:22    365.235856 = 52wk  1d  05h 39m 38s
+ 2173 Dec 21 Tue at 13:16:17    365.247164 = 52wk  1d  05h 55m 55s
+ 2174 Dec 21 Wed at 19:10:35    365.246042 = 52wk  1d  05h 54m 18s
+ 2175 Dec 22 Fri at 00:51:13    365.236551 = 52wk  1d  05h 40m 38s
+ 2176 Dec 21 Sat at 06:46:14    365.246539 = 52wk  1d  05h 55m 01s
+ 2177 Dec 21 Sun at 12:30:18    365.238935 = 52wk  1d  05h 44m 04s
+ 2178 Dec 21 Mon at 18:15:30    365.239722 = 52wk  1d  05h 45m 12s
+ 2179 Dec 22 Wed at 00:11:31    365.247234 = 52wk  1d  05h 56m 01s
+ 2180 Dec 21 Thu at 05:53:08    365.237234 = 52wk  1d  05h 41m 37s
+ 2181 Dec 21 Fri at 11:47:55    365.246377 = 52wk  1d  05h 54m 47s
+ 2182 Dec 21 Sat at 17:42:28    365.246215 = 52wk  1d  05h 54m 33s
+ 2183 Dec 21 Sun at 23:24:12    365.237315 = 52wk  1d  05h 41m 44s
+ 2184 Dec 21 Tue at 05:23:24    365.249444 = 52wk  1d  05h 59m 12s
+ 2185 Dec 21 Wed at 11:16:50    365.245440 = 52wk  1d  05h 53m 26s
+ 2186 Dec 21 Thu at 17:05:43    365.242280 = 52wk  1d  05h 48m 53s
+ 2187 Dec 21 Fri at 23:03:01    365.248125 = 52wk  1d  05h 57m 18s
+ 2188 Dec 21 Sun at 04:43:34    365.236493 = 52wk  1d  05h 40m 33s
+ 2189 Dec 21 Mon at 10:34:00    365.243356 = 52wk  1d  05h 50m 26s
+ 2190 Dec 21 Tue at 16:27:36    365.245556 = 52wk  1d  05h 53m 36s
+ 2191 Dec 21 Wed at 22:06:52    365.235602 = 52wk  1d  05h 39m 16s
+ 2192 Dec 21 Fri at 03:58:35    365.244248 = 52wk  1d  05h 51m 43s
+ 2193 Dec 21 Sat at 09:45:49    365.241134 = 52wk  1d  05h 47m 14s
+ 2194 Dec 21 Sun at 15:24:59    365.235532 = 52wk  1d  05h 39m 10s
+ 2195 Dec 21 Mon at 21:17:53    365.245069 = 52wk  1d  05h 52m 54s
+ 2196 Dec 21 Wed at 03:01:35    365.238681 = 52wk  1d  05h 43m 42s
+ 2197 Dec 21 Thu at 08:55:19    365.245648 = 52wk  1d  05h 53m 44s
+ 2198 Dec 21 Fri at 14:55:48    365.250336 = 52wk  1d  06h 00m 29s
+ 2199 Dec 21 Sat at 20:38:38    365.238079 = 52wk  1d  05h 42m 50s
+ 2200 Dec 22 Mon at 02:33:41    365.246563 = 52wk  1d  05h 55m 03s
+ 2201 Dec 22 Tue at 08:27:30    365.245706 = 52wk  1d  05h 53m 49s
+ 2202 Dec 22 Wed at 14:11:59    365.239225 = 52wk  1d  05h 44m 29s
+ 2203 Dec 22 Thu at 20:09:41    365.248403 = 52wk  1d  05h 57m 42s
+ 2204 Dec 22 Sat at 01:55:14    365.239965 = 52wk  1d  05h 45m 33s
+ 2205 Dec 22 Sun at 07:43:33    365.241887 = 52wk  1d  05h 48m 19s
+ 2206 Dec 22 Mon at 13:39:28    365.247164 = 52wk  1d  05h 55m 55s
+ 2207 Dec 22 Tue at 19:18:28    365.235417 = 52wk  1d  05h 39m 00s
+ 2208 Dec 22 Thu at 01:12:16    365.245694 = 52wk  1d  05h 53m 48s
+ 2209 Dec 22 Fri at 07:07:02    365.246366 = 52wk  1d  05h 54m 46s
+ 2210 Dec 22 Sat at 12:48:51    365.237373 = 52wk  1d  05h 41m 49s
+ 2211 Dec 22 Sun at 18:41:36    365.244965 = 52wk  1d  05h 52m 45s
+ 2212 Dec 22 Tue at 00:24:00    365.237778 = 52wk  1d  05h 42m 24s
+ 2213 Dec 22 Wed at 06:08:57    365.239549 = 52wk  1d  05h 44m 57s
+ 2214 Dec 22 Thu at 12:04:52    365.247164 = 52wk  1d  05h 55m 55s
+ 2215 Dec 22 Fri at 17:46:45    365.237419 = 52wk  1d  05h 41m 53s
+ 2216 Dec 21 Sat at 23:37:49    365.243796 = 52wk  1d  05h 51m 04s
+ 2217 Dec 22 Mon at 05:32:35    365.246366 = 52wk  1d  05h 54m 46s
+ 2218 Dec 22 Tue at 11:14:49    365.237662 = 52wk  1d  05h 42m 14s
+ 2219 Dec 22 Wed at 17:09:55    365.246597 = 52wk  1d  05h 55m 06s
+ 2220 Dec 21 Thu at 23:02:08    365.244595 = 52wk  1d  05h 52m 13s
+ 2221 Dec 22 Sat at 04:54:41    365.244826 = 52wk  1d  05h 52m 33s
+ 2222 Dec 22 Sun at 10:55:16    365.250405 = 52wk  1d  06h 00m 35s
+ 2223 Dec 22 Mon at 16:41:16    365.240278 = 52wk  1d  05h 46m 00s
+ 2224 Dec 21 Tue at 22:29:05    365.241539 = 52wk  1d  05h 47m 49s
+ 2225 Dec 22 Thu at 04:23:27    365.246088 = 52wk  1d  05h 54m 22s
+ 2226 Dec 22 Fri at 10:05:12    365.237326 = 52wk  1d  05h 41m 45s
+ 2227 Dec 22 Sat at 15:54:55    365.242859 = 52wk  1d  05h 49m 43s
+ 2228 Dec 21 Sun at 21:41:26    365.240637 = 52wk  1d  05h 46m 31s
+ 2229 Dec 22 Tue at 03:23:26    365.237500 = 52wk  1d  05h 42m 00s
+ 2230 Dec 22 Wed at 09:15:10    365.244259 = 52wk  1d  05h 51m 44s
+ 2231 Dec 22 Thu at 14:58:15    365.238252 = 52wk  1d  05h 43m 05s
+ 2232 Dec 21 Fri at 20:47:17    365.242384 = 52wk  1d  05h 49m 02s
+ 2233 Dec 22 Sun at 02:46:00    365.249109 = 52wk  1d  05h 58m 43s
+ 2234 Dec 22 Mon at 08:32:05    365.240336 = 52wk  1d  05h 46m 05s
+ 2235 Dec 22 Tue at 14:23:06    365.243762 = 52wk  1d  05h 51m 01s
+ 2236 Dec 21 Wed at 20:13:45    365.243507 = 52wk  1d  05h 50m 39s
+ 2237 Dec 22 Fri at 02:01:14    365.241308 = 52wk  1d  05h 47m 29s
+ 2238 Dec 22 Sat at 07:58:55    365.248391 = 52wk  1d  05h 57m 41s
+ 2239 Dec 22 Sun at 13:46:48    365.241586 = 52wk  1d  05h 47m 53s
+ 2240 Dec 21 Mon at 19:35:40    365.242269 = 52wk  1d  05h 48m 52s
+ 2241 Dec 22 Wed at 01:30:49    365.246632 = 52wk  1d  05h 55m 09s
+ 2242 Dec 22 Thu at 07:14:56    365.238970 = 52wk  1d  05h 44m 07s
+ 2243 Dec 22 Fri at 13:04:01    365.242419 = 52wk  1d  05h 49m 05s
+ 2244 Dec 21 Sat at 18:56:36    365.244850 = 52wk  1d  05h 52m 35s
+ 2245 Dec 22 Mon at 00:45:40    365.242407 = 52wk  1d  05h 49m 04s
+ 2246 Dec 22 Tue at 06:38:35    365.245081 = 52wk  1d  05h 52m 55s
+ 2247 Dec 22 Wed at 12:23:46    365.239711 = 52wk  1d  05h 45m 11s
+ 2248 Dec 21 Thu at 18:07:22    365.238611 = 52wk  1d  05h 43m 36s
+ 2249 Dec 21 Fri at 23:59:49    365.244757 = 52wk  1d  05h 52m 27s
+ 2250 Dec 22 Sun at 05:45:26    365.240012 = 52wk  1d  05h 45m 37s
+ 2251 Dec 22 Mon at 11:31:34    365.240370 = 52wk  1d  05h 46m 08s
+ 2252 Dec 21 Tue at 17:21:17    365.242859 = 52wk  1d  05h 49m 43s
+ 2253 Dec 21 Wed at 23:08:33    365.241157 = 52wk  1d  05h 47m 16s
+ 2254 Dec 22 Fri at 04:58:53    365.243287 = 52wk  1d  05h 50m 20s
+ 2255 Dec 22 Sat at 10:50:42    365.244317 = 52wk  1d  05h 51m 49s
+ 2256 Dec 21 Sun at 16:42:04    365.244005 = 52wk  1d  05h 51m 22s
+ 2257 Dec 21 Mon at 22:40:50    365.249144 = 52wk  1d  05h 58m 46s
+ 2258 Dec 22 Wed at 04:32:44    365.244375 = 52wk  1d  05h 51m 54s
+ 2259 Dec 22 Thu at 10:19:50    365.241042 = 52wk  1d  05h 47m 06s
+ 2260 Dec 21 Fri at 16:10:45    365.243692 = 52wk  1d  05h 50m 55s
+ 2261 Dec 21 Sat at 22:00:32    365.242905 = 52wk  1d  05h 49m 47s
+ 2262 Dec 22 Mon at 03:50:20    365.242917 = 52wk  1d  05h 49m 48s
+ 2263 Dec 22 Tue at 09:38:20    365.241667 = 52wk  1d  05h 48m 00s
+ 2264 Dec 21 Wed at 15:23:52    365.239954 = 52wk  1d  05h 45m 32s
+ 2265 Dec 21 Thu at 21:12:45    365.242280 = 52wk  1d  05h 48m 53s
+ 2266 Dec 22 Sat at 02:58:44    365.240266 = 52wk  1d  05h 45m 59s
+ 2267 Dec 22 Sun at 08:43:38    365.239514 = 52wk  1d  05h 44m 54s
+ 2268 Dec 21 Mon at 14:35:12    365.244144 = 52wk  1d  05h 51m 34s
+ 2269 Dec 21 Tue at 20:27:41    365.244780 = 52wk  1d  05h 52m 29s
+ 2270 Dec 22 Thu at 02:17:21    365.242824 = 52wk  1d  05h 49m 40s
+ 2271 Dec 22 Fri at 08:04:20    365.240961 = 52wk  1d  05h 46m 59s
+ 2272 Dec 21 Sat at 13:52:59    365.242118 = 52wk  1d  05h 48m 39s
+ 2273 Dec 21 Sun at 19:44:41    365.244236 = 52wk  1d  05h 51m 42s
+ 2274 Dec 22 Tue at 01:36:15    365.244144 = 52wk  1d  05h 51m 34s
+ 2275 Dec 22 Wed at 07:24:17    365.241690 = 52wk  1d  05h 48m 02s
+ 2276 Dec 21 Thu at 13:13:59    365.242847 = 52wk  1d  05h 49m 42s
+ 2277 Dec 21 Fri at 19:06:42    365.244942 = 52wk  1d  05h 52m 43s
+ 2278 Dec 22 Sun at 00:54:56    365.241829 = 52wk  1d  05h 48m 14s
+ 2279 Dec 22 Mon at 06:46:02    365.243819 = 52wk  1d  05h 51m 06s
+ 2280 Dec 21 Tue at 12:40:56    365.246458 = 52wk  1d  05h 54m 54s
+ 2281 Dec 21 Wed at 18:33:10    365.244606 = 52wk  1d  05h 52m 14s
+ 2282 Dec 22 Fri at 00:23:42    365.243426 = 52wk  1d  05h 50m 32s
+ 2283 Dec 22 Sat at 06:08:10    365.239213 = 52wk  1d  05h 44m 28s
+ 2284 Dec 21 Sun at 11:52:33    365.239155 = 52wk  1d  05h 44m 23s
+ 2285 Dec 21 Mon at 17:44:30    365.244410 = 52wk  1d  05h 51m 57s
+ 2286 Dec 21 Tue at 23:28:52    365.239144 = 52wk  1d  05h 44m 22s
+ 2287 Dec 22 Thu at 05:14:53    365.240289 = 52wk  1d  05h 46m 01s
+ 2288 Dec 21 Fri at 11:04:21    365.242685 = 52wk  1d  05h 49m 28s
+ 2289 Dec 21 Sat at 16:49:47    365.239884 = 52wk  1d  05h 45m 26s
+ 2290 Dec 21 Sun at 22:39:30    365.242859 = 52wk  1d  05h 49m 43s
+ 2291 Dec 22 Tue at 04:29:44    365.243218 = 52wk  1d  05h 50m 14s
+ 2292 Dec 21 Wed at 10:20:34    365.243634 = 52wk  1d  05h 50m 50s
+ 2293 Dec 21 Thu at 16:19:19    365.249132 = 52wk  1d  05h 58m 45s
+ 2294 Dec 21 Fri at 22:09:26    365.243137 = 52wk  1d  05h 50m 07s
+ 2295 Dec 22 Sun at 03:57:04    365.241412 = 52wk  1d  05h 47m 38s
+ 2296 Dec 21 Mon at 09:52:32    365.246852 = 52wk  1d  05h 55m 28s
+ 2297 Dec 21 Tue at 15:42:22    365.242940 = 52wk  1d  05h 49m 50s
+ 2298 Dec 21 Wed at 21:33:23    365.243762 = 52wk  1d  05h 51m 01s
+ 2299 Dec 22 Fri at 03:22:44    365.242604 = 52wk  1d  05h 49m 21s
+ 2300 Dec 22 Sat at 09:05:52    365.238287 = 52wk  1d  05h 43m 08s
+ 2301 Dec 22 Sun at 14:56:42    365.243634 = 52wk  1d  05h 50m 50s
+ 2302 Dec 22 Mon at 20:43:18    365.240694 = 52wk  1d  05h 46m 36s
+ 2303 Dec 23 Wed at 02:26:57    365.238646 = 52wk  1d  05h 43m 39s
+ 2304 Dec 22 Thu at 08:23:11    365.247384 = 52wk  1d  05h 56m 14s
+ 2305 Dec 22 Fri at 14:11:09    365.241644 = 52wk  1d  05h 47m 58s
+ 2306 Dec 22 Sat at 19:58:07    365.240949 = 52wk  1d  05h 46m 58s
+ 2307 Dec 23 Mon at 01:47:09    365.242384 = 52wk  1d  05h 49m 02s
+ 2308 Dec 22 Tue at 07:29:36    365.237812 = 52wk  1d  05h 42m 27s
+ 2309 Dec 22 Wed at 13:24:20    365.246343 = 52wk  1d  05h 54m 44s
+ 2310 Dec 22 Thu at 19:14:35    365.243229 = 52wk  1d  05h 50m 15s
+ 2311 Dec 23 Sat at 00:58:41    365.238958 = 52wk  1d  05h 44m 06s
+ 2312 Dec 22 Sun at 06:55:59    365.248125 = 52wk  1d  05h 57m 18s
+ 2313 Dec 22 Mon at 12:44:56    365.242326 = 52wk  1d  05h 48m 57s
+ 2314 Dec 22 Tue at 18:34:55    365.243044 = 52wk  1d  05h 49m 59s
+ 2315 Dec 23 Thu at 00:32:20    365.248206 = 52wk  1d  05h 57m 25s
+ 2316 Dec 22 Fri at 06:20:09    365.241539 = 52wk  1d  05h 47m 49s
+ 2317 Dec 22 Sat at 12:17:17    365.248009 = 52wk  1d  05h 57m 08s
+ 2318 Dec 22 Sun at 18:06:32    365.242535 = 52wk  1d  05h 49m 15s
+ 2319 Dec 22 Mon at 23:45:55    365.235683 = 52wk  1d  05h 39m 23s
+ 2320 Dec 22 Wed at 05:40:03    365.245926 = 52wk  1d  05h 54m 08s
+ 2321 Dec 22 Thu at 11:26:43    365.240741 = 52wk  1d  05h 46m 40s
+ 2322 Dec 22 Fri at 17:10:28    365.238715 = 52wk  1d  05h 43m 45s
+ 2323 Dec 22 Sat at 23:01:18    365.243634 = 52wk  1d  05h 50m 50s
+ 2324 Dec 22 Mon at 04:41:04    365.235949 = 52wk  1d  05h 39m 46s
+ 2325 Dec 22 Tue at 10:30:28    365.242639 = 52wk  1d  05h 49m 24s
+ 2326 Dec 22 Wed at 16:21:53    365.244039 = 52wk  1d  05h 51m 25s
+ 2327 Dec 22 Thu at 22:04:59    365.238264 = 52wk  1d  05h 43m 06s
+ 2328 Dec 22 Sat at 04:05:47    365.250556 = 52wk  1d  06h 00m 48s
+ 2329 Dec 22 Sun at 09:59:46    365.245822 = 52wk  1d  05h 53m 59s
+ 2330 Dec 22 Mon at 15:45:41    365.240220 = 52wk  1d  05h 45m 55s
+ 2331 Dec 22 Tue at 21:41:40    365.247211 = 52wk  1d  05h 55m 59s
+ 2332 Dec 22 Thu at 03:28:12    365.240648 = 52wk  1d  05h 46m 32s
+ 2333 Dec 22 Fri at 09:21:05    365.245058 = 52wk  1d  05h 52m 53s
+ 2334 Dec 22 Sat at 15:16:44    365.246979 = 52wk  1d  05h 55m 39s
+ 2335 Dec 22 Sun at 20:55:35    365.235313 = 52wk  1d  05h 38m 51s
+ 2336 Dec 22 Tue at 02:49:41    365.245903 = 52wk  1d  05h 54m 06s
+ 2337 Dec 22 Wed at 08:39:36    365.242998 = 52wk  1d  05h 49m 55s
+ 2338 Dec 22 Thu at 14:21:05    365.237141 = 52wk  1d  05h 41m 29s
+ 2339 Dec 22 Fri at 20:17:36    365.247581 = 52wk  1d  05h 56m 31s
+ 2340 Dec 22 Sun at 02:03:50    365.240440 = 52wk  1d  05h 46m 14s
+ 2341 Dec 22 Mon at 07:52:43    365.242280 = 52wk  1d  05h 48m 53s
+ 2342 Dec 22 Tue at 13:44:38    365.244387 = 52wk  1d  05h 51m 55s
+ 2343 Dec 22 Wed at 19:21:06    365.233657 = 52wk  1d  05h 36m 28s
+ 2344 Dec 22 Fri at 01:15:05    365.245822 = 52wk  1d  05h 53m 59s
+ 2345 Dec 22 Sat at 07:08:22    365.245336 = 52wk  1d  05h 53m 17s
+ 2346 Dec 22 Sun at 12:49:43    365.237049 = 52wk  1d  05h 41m 21s
+ 2347 Dec 22 Mon at 18:45:14    365.246887 = 52wk  1d  05h 55m 31s
+ 2348 Dec 22 Wed at 00:31:30    365.240463 = 52wk  1d  05h 46m 16s
+ 2349 Dec 22 Thu at 06:20:57    365.242674 = 52wk  1d  05h 49m 27s
+ 2350 Dec 22 Fri at 12:18:30    365.248299 = 52wk  1d  05h 57m 33s
+ 2351 Dec 22 Sat at 18:03:34    365.239630 = 52wk  1d  05h 45m 04s
+ 2352 Dec 22 Mon at 00:02:21    365.249155 = 52wk  1d  05h 58m 47s
+ 2353 Dec 22 Tue at 05:59:23    365.247940 = 52wk  1d  05h 57m 02s
+ 2354 Dec 22 Wed at 11:39:40    365.236308 = 52wk  1d  05h 40m 17s
+ 2355 Dec 22 Thu at 17:32:54    365.245301 = 52wk  1d  05h 53m 14s
+ 2356 Dec 21 Fri at 23:20:31    365.241400 = 52wk  1d  05h 47m 37s
+ 2357 Dec 22 Sun at 05:05:19    365.239444 = 52wk  1d  05h 44m 48s
+ 2358 Dec 22 Mon at 10:58:35    365.245324 = 52wk  1d  05h 53m 16s
+ 2359 Dec 22 Tue at 16:36:32    365.234688 = 52wk  1d  05h 37m 57s
+ 2360 Dec 21 Wed at 22:25:12    365.242130 = 52wk  1d  05h 48m 40s
+ 2361 Dec 22 Fri at 04:18:41    365.245475 = 52wk  1d  05h 53m 29s
+ 2362 Dec 22 Sat at 09:58:44    365.236146 = 52wk  1d  05h 40m 03s
+ 2363 Dec 22 Sun at 15:54:31    365.247072 = 52wk  1d  05h 55m 47s
+ 2364 Dec 21 Mon at 21:48:08    365.245567 = 52wk  1d  05h 53m 37s
+ 2365 Dec 22 Wed at 03:33:23    365.239757 = 52wk  1d  05h 45m 15s
+ 2366 Dec 22 Thu at 09:29:19    365.247176 = 52wk  1d  05h 55m 56s
+ 2367 Dec 22 Fri at 15:12:00    365.237975 = 52wk  1d  05h 42m 41s
+ 2368 Dec 21 Sat at 21:04:41    365.244919 = 52wk  1d  05h 52m 41s
+ 2369 Dec 22 Mon at 03:04:19    365.249745 = 52wk  1d  05h 59m 38s
+ 2370 Dec 22 Tue at 08:46:09    365.237384 = 52wk  1d  05h 41m 50s
+ 2371 Dec 22 Wed at 14:39:06    365.245104 = 52wk  1d  05h 52m 57s
+ 2372 Dec 21 Thu at 20:30:15    365.243854 = 52wk  1d  05h 51m 09s
+ 2373 Dec 22 Sat at 02:13:38    365.238461 = 52wk  1d  05h 43m 23s
+ 2374 Dec 22 Sun at 08:09:40    365.247245 = 52wk  1d  05h 56m 02s
+ 2375 Dec 22 Mon at 13:56:09    365.240613 = 52wk  1d  05h 46m 29s
+ 2376 Dec 21 Tue at 19:47:08    365.243738 = 52wk  1d  05h 50m 59s
+ 2377 Dec 22 Thu at 01:43:14    365.247292 = 52wk  1d  05h 56m 06s
+ 2378 Dec 22 Fri at 07:21:17    365.234757 = 52wk  1d  05h 38m 03s
+ 2379 Dec 22 Sat at 13:09:44    365.241979 = 52wk  1d  05h 48m 27s
+ 2380 Dec 21 Sun at 19:00:47    365.243785 = 52wk  1d  05h 51m 03s
+ 2381 Dec 22 Tue at 00:43:41    365.238125 = 52wk  1d  05h 42m 54s
+ 2382 Dec 22 Wed at 06:34:45    365.243796 = 52wk  1d  05h 51m 04s
+ 2383 Dec 22 Thu at 12:18:40    365.238831 = 52wk  1d  05h 43m 55s
+ 2384 Dec 21 Fri at 18:06:02    365.241227 = 52wk  1d  05h 47m 22s
+ 2385 Dec 22 Sun at 00:03:54    365.248519 = 52wk  1d  05h 57m 52s
+ 2386 Dec 22 Mon at 05:50:42    365.240833 = 52wk  1d  05h 46m 48s
+ 2387 Dec 22 Tue at 11:45:45    365.246563 = 52wk  1d  05h 55m 03s
+ 2388 Dec 21 Wed at 17:44:55    365.249421 = 52wk  1d  05h 59m 10s
+ 2389 Dec 21 Thu at 23:30:46    365.240174 = 52wk  1d  05h 45m 51s
+ 2390 Dec 22 Sat at 05:22:52    365.244514 = 52wk  1d  05h 52m 06s
+ 2391 Dec 22 Sun at 11:10:28    365.241389 = 52wk  1d  05h 47m 36s
+ 2392 Dec 21 Mon at 16:58:33    365.241725 = 52wk  1d  05h 48m 05s
+ 2393 Dec 21 Tue at 22:54:47    365.247384 = 52wk  1d  05h 56m 14s
+ 2394 Dec 22 Thu at 04:37:25    365.237940 = 52wk  1d  05h 42m 38s
+ 2395 Dec 22 Fri at 10:22:07    365.239375 = 52wk  1d  05h 44m 42s
+ 2396 Dec 21 Sat at 16:14:05    365.244421 = 52wk  1d  05h 51m 58s
+ 2397 Dec 21 Sun at 21:55:10    365.236863 = 52wk  1d  05h 41m 05s
+ 2398 Dec 22 Tue at 03:45:44    365.243449 = 52wk  1d  05h 50m 34s
+ 2399 Dec 22 Wed at 09:35:32    365.242917 = 52wk  1d  05h 49m 48s
+ 2400 Dec 21 Thu at 15:23:33    365.241678 = 52wk  1d  05h 48m 01s
+ </PRE>
+ </TD></TR>
+ </TABLE>
+
+  <DIV align='center' class='Tx11'>Table computed by Jay Tanner - 2012</DIV>
+
+ </BODY>
+ </HTML>
+
