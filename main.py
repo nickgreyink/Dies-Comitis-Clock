@@ -7,7 +7,7 @@ def deletelastline():
     print(LINE_UP, end=LINE_CLEAR)
     
 # The delay between loops of the clock
-delaytime = 0.1
+delaytime = 0.01
 
 # the loop to display the clock
 while True:    
